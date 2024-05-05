@@ -13,3 +13,9 @@ function multiply(firstNumber,secondNumber){
 function divide(firstNumber,secondNumber){
     return firstNumber / secondNumber;
 }
+
+let firstNumber;
+
+let operator;
+
+let secondNumber;
