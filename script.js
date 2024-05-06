@@ -11,7 +11,11 @@ function multiply(firstNumber,secondNumber){
 }
 
 function divide(firstNumber,secondNumber){
-    return firstNumber / secondNumber;
+    if(secondNumber === 0){
+        return "lmao";
+    }else{
+        return firstNumber / secondNumber;
+    }
 }
 
 let firstNumber;
