@@ -64,3 +64,13 @@ equalSign.addEventListener('click',() => {
     display.textContent = operate(operator,firstNumber,secondNumber);
     displayValue = display.textContent;
 })
+
+const resetButton = document.querySelector('.reset-button');
+
+resetButton.addEventListener('click', () => {
+    display.textContent = '';
+    displayValue = '';
+    firstNumber = '';
+    operator = '';
+    secondNumber = '';
+})
