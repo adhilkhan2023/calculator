@@ -74,3 +74,12 @@ resetButton.addEventListener('click', () => {
     operator = '';
     secondNumber = '';
 })
+
+const deleteButton = document.querySelector('.delete-button');
+
+deleteButton.addEventListener('click', () => {
+    let array = display.textContent.split('');
+    array.splice(array.length-1,1);
+    display.textContent = array.join('');
+    displayValue = display.textContent;
+})
