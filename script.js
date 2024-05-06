@@ -45,3 +45,22 @@ for(i = 0; i < numberButtons.length; i++){
         displayValue = display.textContent;
     })
 }
+
+const operatorButtons = document.querySelectorAll('.operator-buttons');
+
+for(i = 0; i < operatorButtons.length; i++){
+    operatorButtons[i].addEventListener('click',(event) => {
+        firstNumber = parseInt(displayValue);
+        display.textContent = '';
+        displayValue = '';
+        operator = event.target.textContent;
+    })
+}
+
+const equalSign = document.querySelector('.equal-sign');
+
+equalSign.addEventListener('click',() => {
+    secondNumber = parseInt(displayValue);
+    display.textContent = operate(operator,firstNumber,secondNumber);
+    displayValue = display.textContent;
+})
