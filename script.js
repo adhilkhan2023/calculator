@@ -32,3 +32,16 @@ function operate(operator,firstNumber,secondNumber){
             return divide(firstNumber,secondNumber);
     }
 }
+
+const numberButtons = document.querySelectorAll('.number-buttons');
+
+const display = document.querySelector('.display');
+
+let displayValue;
+
+for(i = 0; i < numberButtons.length; i++){
+    numberButtons[i].addEventListener('click',(event) => {
+        display.textContent += event.target.textContent;
+        displayValue = display.textContent;
+    })
+}
