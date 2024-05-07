@@ -1,20 +1,20 @@
 function add(firstNumber,secondNumber){
-    return firstNumber + secondNumber;
+    return (firstNumber + secondNumber).toFixed(1);
 }
 
 function subtract(firstNumber,secondNumber){
-    return firstNumber - secondNumber;
+    return (firstNumber - secondNumber).toFixed(1);
 }
 
 function multiply(firstNumber,secondNumber){
-    return firstNumber * secondNumber;
+    return (firstNumber * secondNumber).toFixed(1);
 }
 
 function divide(firstNumber,secondNumber){
     if(secondNumber === 0){
         return "lmao";
     }else{
-        return firstNumber / secondNumber;
+        return (firstNumber / secondNumber).toFixed(1);
     }
 }
 
