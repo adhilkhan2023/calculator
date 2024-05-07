@@ -55,13 +55,13 @@ const operatorButtons = document.querySelectorAll('.operator-buttons');
 for(i = 0; i < operatorButtons.length; i++){
     operatorButtons[i].addEventListener('click',(event) => {
         if(firstNumber){
-            secondNumber = parseInt(displayValue);
+            secondNumber = parseFloat(displayValue);
             display.textContent = operate(operator,firstNumber,secondNumber);
             displayValue = display.textContent;
             firstNumber = '';
             secondNumber = '';
         }else{
-            firstNumber = parseInt(displayValue);
+            firstNumber = parseFloat(displayValue);
             display.textContent = '';
             displayValue = '';
             operator = event.target.textContent;
@@ -72,7 +72,7 @@ for(i = 0; i < operatorButtons.length; i++){
 const equalSign = document.querySelector('.equal-sign');
 
 equalSign.addEventListener('click',() => {
-    secondNumber = parseInt(displayValue);
+    secondNumber = parseFloat(displayValue);
     display.textContent = operate(operator,firstNumber,secondNumber);
     displayValue = display.textContent;
     firstNumber = '';
