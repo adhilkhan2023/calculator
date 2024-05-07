@@ -1,20 +1,44 @@
 function add(firstNumber,secondNumber){
-    return (firstNumber + secondNumber).toFixed(1);
+    let result = firstNumber + secondNumber;
+    let resultInString = result.toString();
+
+    if(resultInString.includes('.')){
+        return result.toFixed(1);
+    }else{
+        return result;
+    }
 }
 
 function subtract(firstNumber,secondNumber){
-    return (firstNumber - secondNumber).toFixed(1);
+    let result = firstNumber - secondNumber;
+    let resultInString = result.toString();
+
+    if(resultInString.includes('.')){
+        return result.toFixed(1);
+    }else{
+        return result;
+    }
 }
 
 function multiply(firstNumber,secondNumber){
-    return (firstNumber * secondNumber).toFixed(1);
+    let result = firstNumber * secondNumber;
+    let resultInString = result.toString();
+
+    if(resultInString.includes('.')){
+        return result.toFixed(1);
+    }else{
+        return result;
+    }
 }
 
 function divide(firstNumber,secondNumber){
-    if(secondNumber === 0){
-        return "lmao";
+    let result = firstNumber / secondNumber;
+    let resultInString = result.toString();
+
+    if(resultInString.includes('.')){
+        return result.toFixed(1);
     }else{
-        return (firstNumber / secondNumber).toFixed(1);
+        return result;
     }
 }
 
