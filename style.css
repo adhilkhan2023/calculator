@@ -80,3 +80,18 @@ button{
     background-color: rgb(209,63,48);
     color: white;
 }
+
+button:active{
+    background-color: rgb(70,78,93);
+    color: white;
+}
+
+.reset-button:active,.delete-button:active{
+    background-color: white;
+    color: rgb(100,114,153);
+}
+
+.equal-sign:active{
+    color: rgb(209,63,48);
+    background-color: white;
+}
