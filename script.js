@@ -116,7 +116,13 @@ const deleteButton = document.querySelector('.delete-button');
 
 deleteButton.addEventListener('click', () => {
     let array = display.textContent.split('');
-    array.splice(array.length-1,1);
+
+    if(display.textContent === "NaN" || display.textContent === "Infinity"){
+        array.splice(array[0],array.length);
+    }else{
+        array.splice(array.length-1,1);
+    }
+    
     display.textContent = array.join('');
     displayValue = display.textContent;
 })
