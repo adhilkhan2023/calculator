@@ -96,3 +96,16 @@ deleteButton.addEventListener('click', () => {
     display.textContent = array.join('');
     displayValue = display.textContent;
 })
+
+const dot = document.querySelector('.dot');
+
+dot.addEventListener('click',showDot);
+
+function showDot(event){
+    if(display.textContent.includes(event.target.textContent)){
+        dot.removeEventListener('click',showDot);
+    }else{
+        display.textContent += event.target.textContent;
+        displayValue = display.textContent;
+    }
+}
